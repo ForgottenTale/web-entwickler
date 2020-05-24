@@ -5,6 +5,7 @@ import Dont from './components/Dont';
 import Updates from './components/Updates';
 import Footer from './components/Footer';
 import Corona from './components/Corona';
+import Navbar from './components/Navebar';
 const axios = require('axios');
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
   return (
     <div className="wrapper">
         <div className="inner_wrapper">
+           <Navbar/>
            <Home />
            <Corona/>
            <Do />

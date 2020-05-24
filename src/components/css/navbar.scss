@@ -4,6 +4,10 @@
 .navbar{
 @include flexbox(space-between,row);
 height: 100px;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1;
 
    &__links{
        width: 600px;

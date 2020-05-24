@@ -1,21 +1,33 @@
-@mixin svgpos($right,$left) {
-    height: 100vh;
-    position: absolute;
-    top:0;
-    left: $left;
-    right: $right;
-    z-index: -1;
+@import './main.scss';
     
-}
+    
+
 .home{
     height: 100vh;
     position: relative;
+    background-color: #001838;
+    @include flexbox(flex-start,row);
 
-    &__background{
-        @include svgpos(0,0);
-    }
+ 
     &__corona{
-        @include svgpos(0,none);
+        height: 100vh;
+        position: absolute;
+        top:0;
+        left: 0;
+        opacity: .2;
+    }
+    &__title{
+        color: white;
+        font-size: 80px;
+        font-weight: 900;
+        padding: 20px 0 20px 150px;
+        z-index: 2;
+    }
+    &__description{
+        color: $secondary;
+        font-size: 18px;
+        letter-spacing: 10px;
+        padding-left: 150px;
     }
 
 }
