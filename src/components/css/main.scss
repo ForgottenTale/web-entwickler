@@ -1,0 +1,29 @@
+$font : 'Roboto';
+$primary : rgb(0, 190, 181);
+$secondary : rgb(150, 150, 150);
+
+@mixin flexbox($pos,$dir) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $pos;
+    align-items: center;
+}
+
+// Css grid, col_num refers to the number of columns
+
+@mixin grid($col_num) {
+    display: grid;
+    grid-column: auto;
+    grid-template-columns: repeat($col_num,1fr);
+    grid-gap: 35px;
+}
+
+body{
+    font-family: $font;
+}
+
+.title{
+    color: $primary;
+    margin: 170px auto;
+    letter-spacing: 8px;
+}

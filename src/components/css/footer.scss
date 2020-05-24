@@ -1,0 +1,19 @@
+@import './main.scss';
+.footer{
+    color: white;
+    background-color: rgb(19, 19, 19); 
+    @include flexbox(space-around,row);
+    align-items: unset;
+
+    h4{
+        padding: 15px 0;
+    }
+  
+    &__helpline{
+       padding: 60px 0;
+
+    }
+    &__developer{
+        padding: 60px 0;
+    }
+}

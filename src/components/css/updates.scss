@@ -1,0 +1,37 @@
+@import './main.scss';
+
+.updates{
+    background-color: rgb(0, 110, 255);
+    height: 600px;
+    color: white;
+    h2{
+        text-align: center;
+        padding: 150px 0;
+        letter-spacing: 10px;
+    }
+    &__box{
+    @include flexbox(space-around,row);
+
+    }
+}
+.box{
+    @include flexbox(center,column);
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    transition: background-color 150ms ease-out;
+    &:hover{
+        background-color: white;
+        color: rgb(0, 110, 255);
+    }
+
+
+    &__title{
+        font-size: 20px;
+        margin-bottom: 10px;
+        
+    }
+    &__value{
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,19 @@
+@import './main.scss';
+
+
+.navbar{
+@include flexbox(space-between,row);
+height: 100px;
+
+   &__links{
+       width: 600px;
+       @include flexbox(space-around,row);
+       
+       &__a{
+        text-decoration: none;
+        color: rgb(190, 65, 65);
+        color: $secondary;
+       }
+   }
+
+}

@@ -1,0 +1,21 @@
+@mixin svgpos($right,$left) {
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left: $left;
+    right: $right;
+    z-index: -1;
+    
+}
+.home{
+    height: 100vh;
+    position: relative;
+
+    &__background{
+        @include svgpos(0,0);
+    }
+    &__corona{
+        @include svgpos(0,none);
+    }
+
+}

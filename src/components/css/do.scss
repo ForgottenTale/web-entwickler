@@ -1,0 +1,10 @@
+@import './main.scss';
+
+.do{
+    @include flexbox(center,column);
+    
+    &__cards{
+     @include grid(3);
+    }
+
+}
