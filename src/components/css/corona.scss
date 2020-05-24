@@ -1,24 +1,68 @@
-@import './main.scss';
+@import "./main.scss";
 
-.corona{
+.corona {
     height: 100vh;
-    @include flexbox(space-around,row);
+    @include flexbox(space-around, row);
 
-    img{
+    img {
         width: 40%;
     }
-    &__text{
-
-        &__title{
+    &__text {
+        &__title {
             padding: 30px 0;
-            font-size: 40px;
+            font-size: 60px;
         }
 
-         &__description{
-              max-width: 600px;
-              line-height: 30px;
-              letter-spacing: 1px;
-         }
+        &__description {
+            font-size: 18px;
+            max-width: 600px;
+            line-height: 30px;
+            letter-spacing: 1px;
+        }
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .corona {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 120px;
+        img {
+            width: 50%;
+            margin-top: 200px;
+        }
+
+        &__text {
+            width: 70%;
+            &__title{
+               
+                font-size: 80px;
+                padding: 40px 0;
+            }
+            &__description {
+                font-size: 25px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .corona {
+        img {
+            width: 60%;
+            margin-top: 200px;
+        }
+
+        &__text {
+            margin: 0 auto;
+            width: 90%;
+            &__title{
+                font-size: 60px;
+            }
+
+            &__description {
+                font-size: 20px;
+                width: 90%;
+            }
+        }
+    }
+}

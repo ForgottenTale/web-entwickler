@@ -21,8 +21,7 @@ function App() {
            <Navbar/>
            <Home />
            <Corona/>
-           <Do />
-           <Dont />
+           
            <Updates />
            <Footer />
         </div>

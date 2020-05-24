@@ -7,6 +7,7 @@
 
     h4{
         padding: 15px 0;
+        font-size: 25px;
     }
   
     &__helpline{
@@ -15,5 +16,13 @@
     }
     &__developer{
         padding: 60px 0;
+    }
+}
+
+@media only screen and (max-width: 400px)
+{
+    .footer{
+        flex-direction: column;
+        text-align: center;
     }
 }

@@ -8,3 +8,21 @@
     }
 
 }
+@media only screen and (max-width: 768px)
+{
+    .do{
+        @include flexbox(center,column);
+        
+        &__cards{
+         @include grid(1);
+        
+         @include flexbox(center,column);
+         
+        }
+    }
+    .title{
+        padding-top: 100px;
+        width: 90%;
+        text-align: center;
+    }
+}

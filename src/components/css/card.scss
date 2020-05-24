@@ -31,3 +31,17 @@
     }
 
 }
+
+
+@media only screen and (max-width: 768px)
+{
+    .card{
+        width: 80%;
+        padding-bottom: 60px;
+        
+    &:nth-child(6){
+        padding-bottom: 0;
+       
+    }
+    }
+}

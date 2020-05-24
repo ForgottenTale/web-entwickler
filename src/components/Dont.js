@@ -1,11 +1,11 @@
 import React from 'react'
 import Card from './Card'
 import Wash from '../assets/Wash.svg';
-import './css/do.scss'
+import './css/dont.scss'
 function Do(){
     return(
-        <div className = "do">
-        <h2 className = "title">THINGS YOU CAN DO TO BE SAFE</h2>
+        <div className = "dont">
+        <h2 className = "dont__title">THINGS YOU CAN DONT TO BE SAFE</h2>
         <div className="do__cards">
         <Card img = {Wash}
               title="Wash your hand atleast for 20s" 
