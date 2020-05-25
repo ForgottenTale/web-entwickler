@@ -27,3 +27,14 @@ body{
     margin: 170px auto;
     letter-spacing: 8px;
 }
+.helpline_number{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(0, 140, 255);
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    margin: 0 20px 20px 0;
+    z-index: 2;
+  }

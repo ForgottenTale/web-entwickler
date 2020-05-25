@@ -1,22 +1,23 @@
 import React from 'react';
 import './css/updates.scss'
 
-function Updates(){
+function Counter(){
     return(
-        <div className="updates">
-            <h2 >New updates</h2>
-            <div className="updates__box">
+        <div className="updates" id="update">
+            <h2 data-aos="fade-up">Live Counter</h2>
+            <div className="updates__box" data-aos="fade-up">
             <Box title ="Total cases"
-                  number = "123456"/>
-            <Box title ="Total cases"
-                  number = "123456"/>
-            <Box title ="Total cases"
-                  number = "123456"/>
-            <Box title ="Total cases"
-                  number = "123456"/>                  
+                  number = "77103"/>
+            <Box title ="Active cases"
+                  number = "57720"/>
+            <Box title ="Death"
+                  number = "4021"/>
+            <Box title ="Migrated cases"
+                  number = "1"/>                  
                   
             </div>
             </div>
+            
             
     )
 }
@@ -31,4 +32,4 @@ function Box(props){
 }
 
 
-export default Updates;
+export default Counter;

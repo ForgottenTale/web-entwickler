@@ -3,7 +3,7 @@ import Covid from '../assets/covid.jpg';
 import './css/corona.scss';
 function Corona(){
     return(
-        <div className = "corona">
+        <div className = "corona" data-aos="fade-up" id="corona">
             <img src={Covid}/>
             <div className="corona__text">
                <h1 className="corona__text__title">What is Covid-19</h1>

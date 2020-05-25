@@ -8,12 +8,13 @@
         text-align: center;
         padding: 150px 0;
         letter-spacing: 10px;
-        font-size: 40px;
+        font-size: 35px;
+        color: rgb(130, 205, 255);
     }
 
     &__box {
         @include flexbox(space-around, row);
-        padding-bottom: 150px;
+        padding-bottom: 170px;
     }
 }
 .box {
@@ -26,16 +27,17 @@
     &:hover {
         background-color: white;
         color: rgb(0, 110, 255);
+        border-radius: 20px;
     }
 
     &__title {
         color: rgb(130, 205, 255);
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 10px;
     }
 
     &__value {
-        font-size: 60px;
+        font-size: 55px;
     }
 }
 @media only screen and (max-width: 1024px) {

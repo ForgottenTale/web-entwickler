@@ -4,7 +4,24 @@
     @include flexbox(center,column);
     
     &__cards{
-     @include grid(3);
+        @include flexbox(center,column);
+        &__row{
+            @include flexbox(center,row);
+        }
+    }
+
+}
+@media only screen and (max-width: 1220px)
+{
+    .do{
+        
+        &__cards{
+            @include flexbox(center,row);
+            &__row{
+                @include flexbox(center,column);
+            }
+        }
+    
     }
 
 }
@@ -24,5 +41,7 @@
         padding-top: 100px;
         width: 90%;
         text-align: center;
+        color: $primary;
+        letter-spacing: 8px;
     }
 }

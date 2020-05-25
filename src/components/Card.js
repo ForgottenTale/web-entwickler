@@ -2,7 +2,7 @@ import React from 'react';
 import './css/card.scss'
 function Card(props) {
     return (
-        <div className="card">
+        <div className="card" data-aos="fade-up">
             <img src={props.img} className="card__img"/>
             <div className="card__text">
                 <h2 className="card__text__title">{props.title}</h2>
