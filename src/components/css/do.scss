@@ -17,6 +17,7 @@
         
         &__cards{
             @include flexbox(center,row);
+            margin-bottom: 150px;
             &__row{
                 @include flexbox(center,column);
             }
